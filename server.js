@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 var corsOptions = {
-  origin: "http://localhost:4200"
+  origin: "http://localhost:3000"
 };
 
 //express for the rest api to work
@@ -11,7 +11,8 @@ const app = express();
 app.use(cors(corsOptions));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the React application " });
+  const message="Welcome to the React application ";
+  res.json(message);
 });
 
 const PORT = process.env.PORT || 8080;
