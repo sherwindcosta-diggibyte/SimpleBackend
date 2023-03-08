@@ -1,0 +1,23 @@
+{
+  "name": "nodereact",
+  "version": "1.0.0",
+  "description": "simple node and react application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherwindcosta-diggibyte/SimpleBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sherwindcosta-diggibyte/SimpleBackend/issues"
+  },
+  "homepage": "https://github.com/sherwindcosta-diggibyte/SimpleBackend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
