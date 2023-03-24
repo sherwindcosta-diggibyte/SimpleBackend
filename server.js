@@ -8,14 +8,14 @@ var corsOptions = {
 //express for the rest api to work
 const app = express();
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.get("/", (req, res) => {
   const message="Welcome to the React application ";
   res.json(message);
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
