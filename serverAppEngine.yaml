@@ -1,13 +1,18 @@
 # runtime: nodejs16
 # service: server
 
-service: diggi-flex
-runtime: nodejs
+runtime: custom
 env: flex
+
+service: docker-flex-nodejs
 
 network:
   name: default
   session_affinity: true
+
+runtime_config:
+  docker:
+    image: gcr.io/${PROJECT_ID}/my-docker-image:latest
 
 manual_scaling:
   instances: 1
@@ -16,4 +21,5 @@ resources:
   memory_gb: 2
   disk_size_gb: 10
 
-entrypoint: node server.js
+env_variables:
+  PORT: 3000
