@@ -21,5 +21,5 @@ resources:
   memory_gb: 2
   disk_size_gb: 10
 
-env_variables:
-  PORT: 3000
+# env_variables:
+#   PORT: 3000
